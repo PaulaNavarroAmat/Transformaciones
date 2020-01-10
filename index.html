@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformaciones</title>
+   <style type="text/css">
+       *{
+           margin:0;
+           padding:0 ;
+           box-sizing: border-box;
+       }
+       [class*="c-"]{
+           width:300px;
+           height:300px;
+           overflow: hidden;
+           
+       }
+       .fila1, .fila2{
+           display: flex;
+       }
+       .c-1 img{
+           transform: translate(0,0);
+           opacity: 1;
+           transition: 0.4s opacity;
+       }
+       .c-1:hover img{
+           opacity: 0.6;
+       }
+       .c-1:hover{
+           background: blue;
+           transform: skew(22.5deg,22.5deg);
+       }
+       .c-2 img{
+           transform: translateX(-300px);
+           opacity: 1;
+           transition: 0.6s opacity;
+           transition: 1s;
+       }
+       .c-2:hover img{
+           transform: 5s transform;
+           background: pink;
+           opacity: 0.6;
+           transition: 1s;
+       }
+       .c-2:hover{
+            transform:rotate(45deg);
+            transition: 5s background;
+           background: pink;
+          
+       }
+       
+       .c-3 img{
+           transform: translate(-600px,0);
+           transition: 5s;
+       }
+       .c-3:hover img{
+          transform: scale(1.5);
+            background:lightblue;
+           opacity: 0.5;
+       }
+       .c-3:hover{
+           transition: 0.5s;
+       }
+       .c-4 img{
+           transform: translate(0,-300px)
+            
+       }
+       .c-4:hover img{
+           transform: 5s transform;
+           background: pink;
+           opacity: 0.6;
+           transition: 1s
+        
+       }
+       .c-4:hover{
+           transform:rotate(180deg);
+            transition: 5s;
+           background: pink;
+       }
+       .c-5 img{
+           transform: translate(-300px,-300px)
+       }
+       .c-5:hover img{
+           opacity: 0.6;
+       }
+       .c-5:hover{
+           background: pink;
+           transform: skew(15deg,-15deg);
+           opacity: 0.9;
+           transition: 1s;
+       }
+       .c-6 img{
+           transform: translate(-600px,-300px)
+       }
+       .c-6:hover img{
+           opacity:1;
+       }
+       .c-6:hover{
+           background: crimson;
+           transform: translateX(50px);
+           transition: 1s;
+       }
+    
+    
+    </style>
+</head>
+<body>
+ <div class="container">
+  <div class="fila1">
+   <div class="c-1">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+   
+    <div class="c-2">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+    
+   
+    <div class="c-3">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+  </div>
+   <div class="fila2">
+    <div class="c-4">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+   
+    <div class="c-5">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+   
+   <div class="c-6">
+      <img src="img/capturadepantall-2a392a194cc0f536b02110bf7e6ce005-900x600.jpg">
+   </div>
+    </div>
+    </div>
+</body>
+</html>
